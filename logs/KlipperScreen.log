@@ -21516,3 +21516,297 @@
 2026-03-09 17:50:18,398 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
 2026-03-09 17:50:18,485 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
 2026-03-09 17:50:18,486 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 17:56:27,551 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-03-09 17:56:27,552 [printer.py:change_state()] - Adding callback for state: printing
+2026-03-09 17:56:27,576 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2026-03-09 17:56:27,587 [job_status.py:update_filename()] - Updating filename to 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 17:56:27,589 [job_status.py:_update_file_metadata()] - Update Metadata. File: 3DBenchy_PETG_0.3_36m23s.gcode Size: 4430997
+2026-03-09 17:56:27,706 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 17:56:27,707 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 17:56:27,707 [screen.py:show_panel()] - Panel is already is in view
+2026-03-09 17:59:57,445 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.425: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:00:02,000 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.425: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:00:06,517 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.425: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:00:06,611 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-03-09 18:00:06,611 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:00:06,638 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2026-03-09 18:00:06,845 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:00:06,846 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:00:28,249 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-03-09 18:00:28,250 [printer.py:change_state()] - Adding callback for state: printing
+2026-03-09 18:00:28,274 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2026-03-09 18:00:28,391 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:00:28,392 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:00:28,393 [screen.py:show_panel()] - Panel is already is in view
+2026-03-09 18:03:41,816 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.424: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:03:44,139 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.424: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:03:46,508 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.424: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:03:48,842 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.424: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:03:51,188 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.424: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:03:51,274 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-03-09 18:03:51,275 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:03:51,298 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2026-03-09 18:03:51,517 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:03:51,518 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:05:05,271 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-03-09 18:05:05,271 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-03-09 18:05:05,314 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:05:05,315 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:05:05,316 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-03-09 18:05:05,317 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:05:05,411 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-03-09 18:05:05,454 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-03-09 18:05:10,105 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'timelapse', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-03-09 18:05:11,583 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-03-09 18:05:11,584 [printer.py:log_counts()] - # Extruders: 1
+2026-03-09 18:05:11,584 [printer.py:log_counts()] - # Temperature devices: 6
+2026-03-09 18:05:11,585 [printer.py:log_counts()] - # Fans: 4
+2026-03-09 18:05:11,585 [printer.py:log_counts()] - # Output pins: 1
+2026-03-09 18:05:11,585 [printer.py:log_counts()] - # PWM tools: 0
+2026-03-09 18:05:11,586 [printer.py:log_counts()] - # Leds: 2
+2026-03-09 18:05:11,831 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-03-09 18:05:11,833 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-03-09 18:05:11,834 [screen.py:init_klipper()] - Printer initialized
+2026-03-09 18:05:11,836 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-03-09 18:05:11,836 [printer.py:change_state()] - Adding callback for state: startup
+2026-03-09 18:05:11,932 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:05:11,933 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:05:14,822 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-03-09 18:05:14,822 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:05:14,868 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:05:14,869 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:05:14,870 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-03-09 18:05:14,874 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:05:14,981 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-03-09 18:05:15,118 [main_menu.py:__init__()] - ### Making MainMenu
+2026-03-09 18:05:15,134 [main_menu.py:add_device()] - Adding device: extruder
+2026-03-09 18:05:15,141 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-03-09 18:05:15,148 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-03-09 18:05:15,155 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-03-09 18:05:15,162 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-03-09 18:05:15,168 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-03-09 18:05:15,175 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-03-09 18:05:15,210 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-03-09 18:05:15,230 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-03-09 18:05:15,278 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:05:15,304 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-03-09 18:05:23,953 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-03-09 18:05:23,953 [printer.py:change_state()] - Adding callback for state: printing
+2026-03-09 18:05:24,155 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:05:24,156 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:05:24,156 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:05:24,261 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-03-09 18:05:24,408 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-03-09 18:05:24,428 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-03-09 18:05:24,450 [job_status.py:update_filename()] - Updating filename to 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:05:24,451 [job_status.py:_update_file_metadata()] - Update Metadata. File: 3DBenchy_PETG_0.3_36m23s.gcode Size: 4430997
+2026-03-09 18:08:38,223 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.451: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:08:40,608 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.451: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:08:43,002 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.451: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:08:45,375 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.451: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:08:47,766 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.451: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:08:47,904 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-03-09 18:08:47,904 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:08:47,931 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2026-03-09 18:08:48,083 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:08:48,083 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:09:31,928 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-03-09 18:09:31,929 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-03-09 18:09:31,979 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:09:31,980 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:09:31,980 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-03-09 18:09:31,981 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:09:32,079 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-03-09 18:09:32,123 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-03-09 18:09:36,108 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'timelapse', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-03-09 18:09:38,392 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-03-09 18:09:38,392 [printer.py:log_counts()] - # Extruders: 1
+2026-03-09 18:09:38,393 [printer.py:log_counts()] - # Temperature devices: 6
+2026-03-09 18:09:38,393 [printer.py:log_counts()] - # Fans: 4
+2026-03-09 18:09:38,394 [printer.py:log_counts()] - # Output pins: 1
+2026-03-09 18:09:38,394 [printer.py:log_counts()] - # PWM tools: 0
+2026-03-09 18:09:38,395 [printer.py:log_counts()] - # Leds: 2
+2026-03-09 18:09:38,638 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-03-09 18:09:38,640 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-03-09 18:09:38,640 [screen.py:init_klipper()] - Printer initialized
+2026-03-09 18:09:38,642 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-03-09 18:09:38,643 [printer.py:change_state()] - Adding callback for state: startup
+2026-03-09 18:09:38,749 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:09:38,750 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:09:41,632 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-03-09 18:09:41,632 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:09:41,676 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:09:41,677 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:09:41,677 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-03-09 18:09:41,683 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:09:41,785 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-03-09 18:09:41,926 [main_menu.py:__init__()] - ### Making MainMenu
+2026-03-09 18:09:41,942 [main_menu.py:add_device()] - Adding device: extruder
+2026-03-09 18:09:41,949 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-03-09 18:09:41,958 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-03-09 18:09:41,964 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-03-09 18:09:41,972 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-03-09 18:09:41,978 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-03-09 18:09:41,985 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-03-09 18:09:42,038 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-03-09 18:09:42,060 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-03-09 18:09:42,110 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:09:42,136 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-03-09 18:13:01,910 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: 5 errors, last: Tap detected too close to target z at toolhead z=-0.250
+
+2026-03-09 18:13:10,742 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.349: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:13:45,548 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: stddev 0.023 > 0.020. Consider adjusting tap_samples, tap_max_samples, or tap_samples_stddev.
+
+2026-03-09 18:15:09,093 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-03-09 18:15:09,094 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-03-09 18:15:09,151 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:15:09,151 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:15:09,152 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-03-09 18:15:09,153 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:15:09,251 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-03-09 18:15:09,295 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-03-09 18:15:13,106 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'timelapse', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-03-09 18:15:15,438 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-03-09 18:15:15,439 [printer.py:log_counts()] - # Extruders: 1
+2026-03-09 18:15:15,439 [printer.py:log_counts()] - # Temperature devices: 6
+2026-03-09 18:15:15,439 [printer.py:log_counts()] - # Fans: 4
+2026-03-09 18:15:15,440 [printer.py:log_counts()] - # Output pins: 1
+2026-03-09 18:15:15,440 [printer.py:log_counts()] - # PWM tools: 0
+2026-03-09 18:15:15,440 [printer.py:log_counts()] - # Leds: 2
+2026-03-09 18:15:15,686 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-03-09 18:15:15,688 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-03-09 18:15:15,688 [screen.py:init_klipper()] - Printer initialized
+2026-03-09 18:15:15,690 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-03-09 18:15:15,691 [printer.py:change_state()] - Adding callback for state: startup
+2026-03-09 18:15:15,798 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:15:15,799 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:15:18,676 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-03-09 18:15:18,677 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:15:18,720 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:15:18,721 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:15:18,722 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-03-09 18:15:18,726 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:15:18,822 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-03-09 18:15:18,960 [main_menu.py:__init__()] - ### Making MainMenu
+2026-03-09 18:15:18,975 [main_menu.py:add_device()] - Adding device: extruder
+2026-03-09 18:15:18,982 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-03-09 18:15:18,989 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-03-09 18:15:18,996 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-03-09 18:15:19,002 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-03-09 18:15:19,009 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-03-09 18:15:19,016 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-03-09 18:15:19,051 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-03-09 18:15:19,075 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-03-09 18:15:19,123 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:15:19,147 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-03-09 18:15:29,979 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-03-09 18:15:29,980 [printer.py:change_state()] - Adding callback for state: printing
+2026-03-09 18:15:30,179 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:15:30,180 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:15:30,181 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:15:30,293 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-03-09 18:15:30,427 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-03-09 18:15:30,444 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-03-09 18:15:30,469 [job_status.py:update_filename()] - Updating filename to 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:15:30,470 [job_status.py:_update_file_metadata()] - Update Metadata. File: 3DBenchy_PETG_0.3_36m23s.gcode Size: 4430997
+2026-03-09 18:18:33,983 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:18:36,370 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:18:38,756 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:18:41,148 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:18:43,534 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:18:43,621 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-03-09 18:18:43,622 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:18:43,644 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2026-03-09 18:18:43,911 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:18:43,912 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:21:54,219 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:22:17,064 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:22:19,451 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:22:21,841 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:22:24,226 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:22:26,608 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.525: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-03-09 18:23:30,947 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-03-09 18:23:30,947 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-03-09 18:23:30,994 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:23:30,995 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:23:30,995 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-03-09 18:23:30,996 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:23:31,090 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-03-09 18:23:31,133 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-03-09 18:23:35,116 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'timelapse', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-03-09 18:23:37,056 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-03-09 18:23:37,057 [printer.py:log_counts()] - # Extruders: 1
+2026-03-09 18:23:37,057 [printer.py:log_counts()] - # Temperature devices: 6
+2026-03-09 18:23:37,058 [printer.py:log_counts()] - # Fans: 4
+2026-03-09 18:23:37,058 [printer.py:log_counts()] - # Output pins: 1
+2026-03-09 18:23:37,059 [printer.py:log_counts()] - # PWM tools: 0
+2026-03-09 18:23:37,059 [printer.py:log_counts()] - # Leds: 2
+2026-03-09 18:23:37,303 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-03-09 18:23:37,306 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-03-09 18:23:37,306 [screen.py:init_klipper()] - Printer initialized
+2026-03-09 18:23:37,308 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-03-09 18:23:37,309 [printer.py:change_state()] - Adding callback for state: startup
+2026-03-09 18:23:37,409 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:23:37,410 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:23:40,208 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-03-09 18:23:40,209 [printer.py:change_state()] - Adding callback for state: ready
+2026-03-09 18:23:40,255 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:23:40,256 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:23:40,257 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-03-09 18:23:40,261 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:23:40,357 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-03-09 18:23:40,511 [main_menu.py:__init__()] - ### Making MainMenu
+2026-03-09 18:23:40,527 [main_menu.py:add_device()] - Adding device: extruder
+2026-03-09 18:23:40,534 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-03-09 18:23:40,540 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-03-09 18:23:40,547 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-03-09 18:23:40,555 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-03-09 18:23:40,563 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-03-09 18:23:40,570 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-03-09 18:23:40,610 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-03-09 18:23:40,632 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-03-09 18:23:40,678 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:23:40,704 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-03-09 18:23:50,820 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-03-09 18:23:50,820 [printer.py:change_state()] - Adding callback for state: printing
+2026-03-09 18:23:51,022 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:23:51,023 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:23:51,024 [screen.py:_remove_all_panels()] - Removing all panels
+2026-03-09 18:23:51,136 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-03-09 18:23:51,272 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-03-09 18:23:51,293 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-03-09 18:23:51,316 [job_status.py:update_filename()] - Updating filename to 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:23:51,317 [job_status.py:_update_file_metadata()] - Update Metadata. File: 3DBenchy_PETG_0.3_36m23s.gcode Size: 4430997
+2026-03-09 18:32:38,120 [printer.py:change_state()] - Changing state from 'printing' to 'paused'
+2026-03-09 18:32:38,120 [printer.py:change_state()] - Adding callback for state: paused
+2026-03-09 18:32:38,136 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'paused'
+2026-03-09 18:32:38,261 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-03-09 18:32:38,262 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600 DPMS:True
+2026-03-09 18:32:38,262 [screen.py:show_panel()] - Panel is already is in view
+2026-03-09 18:32:38,268 [screen.py:_load_panel()] - Loading panel: extrude
+2026-03-09 18:32:38,375 [screen.py:attach_panel()] - Current panel hierarchy: job_status > extrude

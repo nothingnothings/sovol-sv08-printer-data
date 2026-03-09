@@ -1787,3 +1787,76 @@ Content-Type: multipart/form-data; boundary=---------------------------284520160
 2026-03-09 17:44:53,987 [websockets.py:_handle_identify()] - Websocket 281472774602080 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
 2026-03-09 17:45:12,207 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Cylinder_PETG_0.3_1m29s.gcode
 2026-03-09 17:45:12,430 [job_state.py:_send_job_event()] - Job Started: Cylinder_PETG_0.3_1m29s.gcode
+2026-03-09 17:54:33,582 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.207
+2026-03-09 17:54:33,585 [application.py:log_request()] - 101 GET /websocket (192.168.0.207) [_TRUSTED_USER_] 5.54ms
+2026-03-09 17:54:33,586 [websockets.py:open()] - Websocket Opened: ID: 281472774084448, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: 192.168.0.176
+2026-03-09 17:54:33,623 [websockets.py:_handle_identify()] - Websocket 281472774084448 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-03-09 17:54:40,103 [application.py:prepare()] - Upload Request Received from 192.168.0.207
+Content-Type: multipart/form-data; boundary=----geckoformboundary81da7b3ad06a5874163d137a33b37cef
+2026-03-09 17:54:45,896 [application.py:post()] - Processing Uploaded File: 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 17:54:46,748 [shell_command.py:pipe_data_received()] - INFO:metadata:Processor preprocess_cancellation is disabled
+
+2026-03-09 17:54:48,299 [shell_command.py:_check_proc_success()] - Command (/home/biqu/moonraker-env/bin/python /home/biqu/moonraker/moonraker/components/file_manager/metadata.py -c /tmp/metacfg-qil07hsd.json) successfully finished
+2026-03-09 17:54:48,308 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.207) [_TRUSTED_USER_] 8206.46ms
+2026-03-09 17:56:27,264 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 17:56:27,520 [job_state.py:_send_job_event()] - Job Started: 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:00:28,011 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:00:28,245 [job_state.py:_send_job_event()] - Job Started: 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:05:04,100 [application.py:prepare()] - Upload Request Received from 192.168.0.139
+Content-Type: multipart/form-data; boundary=---------------------------17244995732744684532085869019
+2026-03-09 18:05:04,154 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-03-09 18:05:04,166 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.139) [_TRUSTED_USER_] 69.16ms
+2026-03-09 18:05:05,264 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-03-09 18:05:06,531 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-03-09 18:05:14,886 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-03-09 18:05:15,074 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-03-09 18:05:15,078 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-03-09 18:05:15,325 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-03-09 18:05:15,603 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-03-09 18:05:16,593 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:05:23,774 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:05:23,925 [job_state.py:_send_job_event()] - Job Started: 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:09:30,661 [application.py:prepare()] - Upload Request Received from 192.168.0.139
+Content-Type: multipart/form-data; boundary=---------------------------13934261237803056833971491149
+2026-03-09 18:09:30,723 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-03-09 18:09:30,735 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.139) [_TRUSTED_USER_] 76.23ms
+2026-03-09 18:09:31,924 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-03-09 18:09:33,197 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-03-09 18:09:41,625 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-03-09 18:09:41,629 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-03-09 18:09:41,680 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-03-09 18:09:41,877 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-03-09 18:09:42,181 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-03-09 18:09:42,640 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:13:01,906 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-03-09 18:13:45,551 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-03-09 18:15:07,807 [application.py:prepare()] - Upload Request Received from 192.168.0.139
+Content-Type: multipart/form-data; boundary=---------------------------257146136638195058563627394964
+2026-03-09 18:15:07,853 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-03-09 18:15:07,873 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.139) [_TRUSTED_USER_] 68.71ms
+2026-03-09 18:15:09,086 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-03-09 18:15:10,354 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-03-09 18:15:18,669 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-03-09 18:15:18,673 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-03-09 18:15:18,725 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-03-09 18:15:18,920 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-03-09 18:15:19,270 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-03-09 18:15:19,932 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:15:29,775 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:15:29,951 [job_state.py:_send_job_event()] - Job Started: 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:22:26,606 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-03-09 18:23:29,690 [application.py:prepare()] - Upload Request Received from 192.168.0.139
+Content-Type: multipart/form-data; boundary=---------------------------24254653591621747630920723390
+2026-03-09 18:23:29,724 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-03-09 18:23:29,736 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.139) [_TRUSTED_USER_] 48.68ms
+2026-03-09 18:23:30,942 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-03-09 18:23:32,207 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-03-09 18:23:40,260 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-03-09 18:23:40,446 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-03-09 18:23:40,453 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-03-09 18:23:40,703 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-03-09 18:23:40,969 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-03-09 18:23:41,461 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-03-09 18:23:50,638 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:23:50,792 [job_state.py:_send_job_event()] - Job Started: 3DBenchy_PETG_0.3_36m23s.gcode
+2026-03-09 18:32:37,901 [klippy_apis.py:pause_print()] - Requesting job pause...
