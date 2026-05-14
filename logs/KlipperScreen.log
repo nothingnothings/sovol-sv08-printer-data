@@ -15687,3 +15687,1075 @@ extruder = False
 2026-05-13 22:18:02,200 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
 2026-05-13 22:18:02,227 [screen.py:init_tempstore()] - Temperature store size: 1200
 2026-05-14 14:49:44,949 [base_panel.py:battery_percentage()] - Battery information not available.
+2026-05-14 15:12:35,850 [screen.py:show_popup_message()] - error: Z axis must be homed before tapping
+2026-05-14 15:19:26,633 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 15:19:26,633 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:19:26,692 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:19:26,693 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:19:26,693 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:19:26,694 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:19:26,797 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 15:19:26,835 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 15:19:30,975 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:19:32,546 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:19:32,547 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:19:32,547 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:19:32,547 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:19:32,548 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:19:32,548 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:19:32,549 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:19:32,791 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:19:32,793 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:19:32,794 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:19:32,796 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:19:32,796 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:19:32,881 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:19:32,881 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:19:35,786 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 15:19:35,787 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:19:35,830 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:19:35,831 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:19:35,831 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:19:35,836 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:19:35,941 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:19:36,096 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:19:36,111 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:19:36,118 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:19:36,125 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:19:36,133 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:19:36,140 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:19:36,147 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:19:36,155 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:19:36,191 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:19:36,207 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:19:36,249 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:19:36,272 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 15:19:53,570 [screen.py:_load_panel()] - Loading panel: gcodes
+2026-05-14 15:19:53,626 [gcodes.py:__init__()] - Thumbsize: 196.3
+2026-05-14 15:19:53,631 [gcodes.py:__init__()] - list
+2026-05-14 15:19:53,642 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2026-05-14 15:19:53,663 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > gcodes
+2026-05-14 15:19:55,614 [gcodes.py:load_files()] - Loaded in 1.766 seconds
+2026-05-14 15:19:58,182 [KlippyGtk.py:Dialog()] - Showing dialog Print 1-6_PETG_0.3_1h24m.gcode (width=1366, height=768)
+2026-05-14 15:19:59,105 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:19:59,106 [gcodes.py:confirm_print_response()] - Starting print: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:19:59,106 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2026-05-14 15:19:59,369 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 15:19:59,369 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 15:19:59,454 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:19:59,455 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:19:59,456 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:19:59,609 [screen.py:_load_panel()] - Loading panel: job_status
+2026-05-14 15:19:59,858 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:19:59,875 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 15:19:59,905 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:19:59,906 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 15:20:01,775 [screen.py:_go_to_submenu()] - #### Go to submenu 
+2026-05-14 15:20:01,776 [screen.py:_go_to_submenu()] - #### Menu __print
+2026-05-14 15:20:01,785 [screen.py:_load_panel()] - Loading panel: menu
+2026-05-14 15:20:01,859 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:20:02,170 [screen.py:attach_panel()] - Current panel hierarchy: job_status > 
+2026-05-14 15:20:02,198 [menu.py:arrangeMenuItems()] - X > move
+2026-05-14 15:20:02,210 [menu.py:arrangeMenuItems()] - X > power
+2026-05-14 15:20:02,249 [menu.py:arrangeMenuItems()] - X > spoolman
+2026-05-14 15:20:02,249 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:20:02,286 [screen.py:_go_to_submenu()] - menu, {{ gettext('Print Control') }}, panel_name=, items=[{'temperature': {'name': "{{ gettext('Temperature') }}", 'icon': 'heat-up', 'panel': 'temperature', 'method': None, 'confirm': None, 'enable': '{{ (printer.temperature_devices.count > 0) or (printer.extruders.count > 0)}}', 'params': '{}', 'style': None}}, {'fan': {'name': "{{ gettext('Fan') }}", 'icon': 'fan', 'panel': 'fan', 'method': None, 'confirm': None, 'enable': '{{ printer.fans.count > 0 }}', 'params': '{}', 'style': None}}, {'move': {'name': "{{ gettext('Move') }}", 'icon': 'move', 'panel': 'move', 'method': None, 'confirm': None, 'enable': '{{ printer.pause_resume.is_paused }}', 'params': '{}', 'style': None}}, {'extrude': {'name': "{{ gettext('Extrude') }}", 'icon': 'extrude', 'panel': 'extrude', 'method': None, 'confirm': None, 'enable': '{{ printer.extruders.count > 0 }}', 'params': '{}', 'style': None}}, {'power': {'name': "{{ gettext('Power') }}", 'icon': 'shutdown', 'panel': 'power', 'method': None, 'confirm': None, 'enable': '{{ moonraker.power_devices.count > 0 }}', 'params': '{}', 'style': None}}, {'led': {'name': "{{ gettext('Leds') }}", 'icon': 'light', 'panel': 'led', 'method': None, 'confirm': None, 'enable': '{{ printer.leds.count > 0 }}', 'params': '{}', 'style': None}}, {'macros': {'name': "{{ gettext('Macros') }}", 'icon': 'custom-script', 'panel': 'gcode_macros', 'method': None, 'confirm': None, 'enable': '{{ printer.gcode_macros.count > 0 }}', 'params': '{}', 'style': None}}, {'notifications': {'name': "{{ gettext('Notifications') }}", 'icon': 'notifications', 'panel': 'notifications', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'camera': {'name': "{{ gettext('Camera') }}", 'icon': 'camera', 'panel': 'camera', 'method': None, 'confirm': None, 'enable': '{{ moonraker.cameras.count > 0 }}', 'params': '{}', 'style': None}}, {'console': {'name': "{{ gettext('Console') }}", 'icon': 'console', 'panel': 'console', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'limits': {'name': "{{ gettext('Limits') }}", 'icon': 'fine-tune', 'panel': 'limits', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'network': {'name': "{{ gettext('Network') }}", 'icon': 'network', 'panel': 'network', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'settings': {'name': 'KlipperScreen', 'icon': 'settings', 'panel': 'settings', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'spoolman': {'name': 'Spoolman', 'icon': 'spoolman', 'panel': 'spoolman', 'method': None, 'confirm': None, 'enable': '{{ moonraker.spoolman }}', 'params': '{}', 'style': None}}, {'system': {'name': "{{ gettext('System') }}", 'icon': 'info', 'panel': 'system', 'method': None, 'confirm': None, 'enable': '{{ moonraker_connected }}', 'params': '{}', 'style': None}}, {'pins': {'name': "{{ gettext('Pins') }}", 'icon': 'hashtag', 'panel': 'pins', 'method': None, 'confirm': None, 'enable': '{{ printer.output_pins.count > 0 or printer.pwm_tools.count > 0 }}', 'params': '{}', 'style': None}}, {'lock': {'name': "{{ gettext('Lock') }}", 'icon': 'lock', 'panel': 'lock_screen', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}]
+2026-05-14 15:20:03,322 [screen.py:_load_panel()] - Loading panel: console
+2026-05-14 15:20:03,417 [screen.py:attach_panel()] - Current panel hierarchy: job_status >  > console
+2026-05-14 15:20:24,696 [screen.py:show_popup_message()] - error: // Unknown command:"START_PRINT"
+2026-05-14 15:20:30,544 [KlippyWebsocket.py:emergency_stop()] - Sending printer.emergency_stop
+2026-05-14 15:20:30,627 [screen.py:show_popup_message()] - error: Shutdown due to webhooks request
+2026-05-14 15:20:30,694 [printer.py:change_state()] - Changing state from 'printing' to 'shutdown'
+2026-05-14 15:20:30,695 [printer.py:change_state()] - Adding callback for state: shutdown
+2026-05-14 15:20:30,898 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:20:30,899 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:20:30,900 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:20:31,014 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 15:20:31,055 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 15:20:53,599 [printer.py:change_state()] - Changing state from 'shutdown' to 'disconnected'
+2026-05-14 15:20:53,600 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:20:53,671 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:20:53,672 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:20:53,673 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:20:53,674 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:20:57,973 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:20:59,635 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:20:59,635 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:20:59,636 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:20:59,636 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:20:59,637 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:20:59,637 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:20:59,638 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:20:59,879 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:20:59,881 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:20:59,881 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:20:59,883 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:20:59,884 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:20:59,975 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:20:59,976 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:01,863 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2026-05-14 15:21:01,864 [printer.py:change_state()] - Adding callback for state: error
+2026-05-14 15:21:01,928 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:01,929 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:01,930 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:07,265 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2026-05-14 15:21:07,266 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:21:07,343 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:07,344 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:07,344 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:21:07,345 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:11,974 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:21:13,328 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:21:13,329 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:21:13,329 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:21:13,330 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:21:13,330 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:21:13,330 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:21:13,331 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:21:13,573 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:21:13,575 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:21:13,576 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:21:13,578 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:21:13,578 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:21:13,663 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:13,664 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:14,707 [printer.py:change_state()] - Changing state from 'startup' to 'disconnected'
+2026-05-14 15:21:14,708 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:21:14,754 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:14,755 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:14,755 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:21:14,755 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:18,972 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:21:20,814 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:21:20,814 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:21:20,815 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:21:20,815 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:21:20,816 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:21:20,816 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:21:20,817 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:21:21,063 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:21:21,065 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:21:21,065 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:21:21,067 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:21:21,068 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:21:21,163 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:21,164 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:23,045 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2026-05-14 15:21:23,045 [printer.py:change_state()] - Adding callback for state: error
+2026-05-14 15:21:23,092 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:23,092 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:23,093 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:28,823 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2026-05-14 15:21:28,824 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:21:28,910 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:28,911 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:28,911 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:21:28,911 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:32,974 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:21:34,747 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:21:34,747 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:21:34,747 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:21:34,748 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:21:34,748 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:21:34,749 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:21:34,749 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:21:34,993 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:21:34,995 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:21:34,996 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:21:34,998 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:21:34,999 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:21:35,095 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:35,095 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:36,978 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2026-05-14 15:21:36,979 [printer.py:change_state()] - Adding callback for state: error
+2026-05-14 15:21:37,058 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:37,060 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:37,060 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:40,370 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2026-05-14 15:21:40,371 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:21:40,422 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:40,423 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:40,423 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:21:40,424 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 15:21:44,973 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:21:46,394 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:21:46,394 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:21:46,395 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:21:46,395 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:21:46,396 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:21:46,396 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:21:46,397 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:21:46,641 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:21:46,643 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:21:46,643 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:21:46,646 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:21:46,646 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:21:46,732 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:46,733 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:49,505 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 15:21:49,506 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:21:49,554 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:21:49,555 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:21:49,555 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:21:49,559 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:21:49,671 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:21:49,830 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:21:49,846 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:21:49,853 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:21:49,860 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:21:49,867 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:21:49,875 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:21:49,883 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:21:49,891 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:21:49,928 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:21:49,943 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:21:49,986 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:21:50,012 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 15:22:52,834 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 15:22:52,834 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:22:52,880 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:22:52,881 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:22:52,881 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:22:52,883 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:22:52,995 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 15:22:53,037 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 15:22:56,974 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:22:58,850 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:22:58,851 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:22:58,851 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:22:58,851 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:22:58,852 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:22:58,852 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:22:58,853 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:22:59,093 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:22:59,095 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:22:59,096 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:22:59,098 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:22:59,099 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:22:59,196 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:22:59,197 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:23:02,100 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 15:23:02,100 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:23:02,175 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:23:02,176 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:23:02,176 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:23:02,180 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:23:02,292 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:23:02,463 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:23:02,479 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:23:02,486 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:23:02,494 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:23:02,504 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:23:02,512 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:23:02,519 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:23:02,527 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:23:02,565 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:23:02,581 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:23:02,634 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:23:02,659 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 15:24:13,227 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 15:24:13,227 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:24:13,276 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:24:13,277 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:24:13,277 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:24:13,278 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:24:13,398 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 15:24:13,445 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 15:24:17,972 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:24:19,091 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:24:19,092 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:24:19,092 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:24:19,092 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:24:19,093 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:24:19,093 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:24:19,094 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:24:19,336 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:24:19,339 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:24:19,339 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:24:19,341 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:24:19,342 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:24:19,420 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:24:19,421 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:24:22,212 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 15:24:22,213 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:24:22,261 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:24:22,262 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:24:22,262 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:24:22,267 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:24:22,387 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:24:22,556 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:24:22,572 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:24:22,579 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:24:22,587 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:24:22,594 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:24:22,603 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:24:22,610 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:24:22,618 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:24:22,657 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:24:22,671 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:24:22,721 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:24:22,746 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 15:25:03,325 [screen.py:show_panel()] - Reinitializing panel gcodes
+2026-05-14 15:25:03,346 [gcodes.py:__init__()] - Thumbsize: 196.3
+2026-05-14 15:25:03,438 [gcodes.py:__init__()] - list
+2026-05-14 15:25:03,448 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2026-05-14 15:25:03,468 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > gcodes
+2026-05-14 15:25:04,848 [gcodes.py:load_files()] - Loaded in 1.186 seconds
+2026-05-14 15:25:07,058 [KlippyGtk.py:Dialog()] - Showing dialog Print 1-6_PETG_0.3_1h24m.gcode (width=1366, height=768)
+2026-05-14 15:25:08,312 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:25:08,312 [gcodes.py:confirm_print_response()] - Starting print: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:25:08,313 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2026-05-14 15:25:08,618 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 15:25:08,619 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 15:25:08,735 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:25:08,736 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:25:08,737 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:25:08,914 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-05-14 15:25:09,036 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:25:09,051 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 15:25:09,066 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:25:09,067 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 15:25:10,393 [screen.py:_go_to_submenu()] - #### Go to submenu 
+2026-05-14 15:25:10,394 [screen.py:_go_to_submenu()] - #### Menu __print
+2026-05-14 15:25:10,403 [screen.py:show_panel()] - Reinitializing panel menu
+2026-05-14 15:25:10,476 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:25:10,718 [screen.py:attach_panel()] - Current panel hierarchy: job_status > 
+2026-05-14 15:25:10,745 [menu.py:arrangeMenuItems()] - X > move
+2026-05-14 15:25:10,758 [menu.py:arrangeMenuItems()] - X > power
+2026-05-14 15:25:10,798 [menu.py:arrangeMenuItems()] - X > spoolman
+2026-05-14 15:25:10,798 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:25:10,842 [screen.py:_go_to_submenu()] - menu, {{ gettext('Print Control') }}, panel_name=, items=[{'temperature': {'name': "{{ gettext('Temperature') }}", 'icon': 'heat-up', 'panel': 'temperature', 'method': None, 'confirm': None, 'enable': '{{ (printer.temperature_devices.count > 0) or (printer.extruders.count > 0)}}', 'params': '{}', 'style': None}}, {'fan': {'name': "{{ gettext('Fan') }}", 'icon': 'fan', 'panel': 'fan', 'method': None, 'confirm': None, 'enable': '{{ printer.fans.count > 0 }}', 'params': '{}', 'style': None}}, {'move': {'name': "{{ gettext('Move') }}", 'icon': 'move', 'panel': 'move', 'method': None, 'confirm': None, 'enable': '{{ printer.pause_resume.is_paused }}', 'params': '{}', 'style': None}}, {'extrude': {'name': "{{ gettext('Extrude') }}", 'icon': 'extrude', 'panel': 'extrude', 'method': None, 'confirm': None, 'enable': '{{ printer.extruders.count > 0 }}', 'params': '{}', 'style': None}}, {'power': {'name': "{{ gettext('Power') }}", 'icon': 'shutdown', 'panel': 'power', 'method': None, 'confirm': None, 'enable': '{{ moonraker.power_devices.count > 0 }}', 'params': '{}', 'style': None}}, {'led': {'name': "{{ gettext('Leds') }}", 'icon': 'light', 'panel': 'led', 'method': None, 'confirm': None, 'enable': '{{ printer.leds.count > 0 }}', 'params': '{}', 'style': None}}, {'macros': {'name': "{{ gettext('Macros') }}", 'icon': 'custom-script', 'panel': 'gcode_macros', 'method': None, 'confirm': None, 'enable': '{{ printer.gcode_macros.count > 0 }}', 'params': '{}', 'style': None}}, {'notifications': {'name': "{{ gettext('Notifications') }}", 'icon': 'notifications', 'panel': 'notifications', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'camera': {'name': "{{ gettext('Camera') }}", 'icon': 'camera', 'panel': 'camera', 'method': None, 'confirm': None, 'enable': '{{ moonraker.cameras.count > 0 }}', 'params': '{}', 'style': None}}, {'console': {'name': "{{ gettext('Console') }}", 'icon': 'console', 'panel': 'console', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'limits': {'name': "{{ gettext('Limits') }}", 'icon': 'fine-tune', 'panel': 'limits', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'network': {'name': "{{ gettext('Network') }}", 'icon': 'network', 'panel': 'network', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'settings': {'name': 'KlipperScreen', 'icon': 'settings', 'panel': 'settings', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'spoolman': {'name': 'Spoolman', 'icon': 'spoolman', 'panel': 'spoolman', 'method': None, 'confirm': None, 'enable': '{{ moonraker.spoolman }}', 'params': '{}', 'style': None}}, {'system': {'name': "{{ gettext('System') }}", 'icon': 'info', 'panel': 'system', 'method': None, 'confirm': None, 'enable': '{{ moonraker_connected }}', 'params': '{}', 'style': None}}, {'pins': {'name': "{{ gettext('Pins') }}", 'icon': 'hashtag', 'panel': 'pins', 'method': None, 'confirm': None, 'enable': '{{ printer.output_pins.count > 0 or printer.pwm_tools.count > 0 }}', 'params': '{}', 'style': None}}, {'lock': {'name': "{{ gettext('Lock') }}", 'icon': 'lock', 'panel': 'lock_screen', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}]
+2026-05-14 15:25:11,804 [screen.py:show_panel()] - Reinitializing panel console
+2026-05-14 15:25:11,854 [screen.py:attach_panel()] - Current panel hierarchy: job_status >  > console
+2026-05-14 15:27:08,281 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:27:08,328 [screen.py:attach_panel()] - Current panel hierarchy: job_status > 
+2026-05-14 15:27:08,383 [menu.py:arrangeMenuItems()] - X > move
+2026-05-14 15:27:08,405 [menu.py:arrangeMenuItems()] - X > power
+2026-05-14 15:27:08,480 [menu.py:arrangeMenuItems()] - X > spoolman
+2026-05-14 15:27:08,481 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:27:10,082 [screen.py:attach_panel()] - Current panel hierarchy: job_status >  > console
+2026-05-14 15:31:26,010 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:31:26,044 [screen.py:attach_panel()] - Current panel hierarchy: job_status > 
+2026-05-14 15:31:26,072 [menu.py:arrangeMenuItems()] - X > move
+2026-05-14 15:31:26,084 [menu.py:arrangeMenuItems()] - X > power
+2026-05-14 15:31:26,118 [menu.py:arrangeMenuItems()] - X > spoolman
+2026-05-14 15:31:26,119 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:31:27,163 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:31:27,194 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:31:28,671 [KlippyGtk.py:Dialog()] - Showing dialog Cancel (width=1366, height=768)
+2026-05-14 15:31:29,798 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:31:29,799 [job_status.py:cancel_confirm()] - Canceling print
+2026-05-14 15:31:29,804 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelling'
+2026-05-14 15:31:29,810 [KlippyWebsocket.py:print_cancel()] - Sending printer.print.cancel
+2026-05-14 15:31:30,243 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-05-14 15:31:30,243 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:31:30,263 [job_status.py:set_state()] - Changing job_status state from 'cancelling' to 'cancelled'
+2026-05-14 15:31:30,397 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:31:30,398 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:31:33,223 [screen.py:show_popup_message()] - error: Unknown gcode_macro variable 'state'
+2026-05-14 15:31:40,083 [job_status.py:close_panel()] - Closing job_status panel
+2026-05-14 15:31:40,084 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:31:40,088 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:31:40,210 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:31:40,374 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:31:40,391 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:31:40,400 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:31:40,408 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:31:40,416 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:31:40,423 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:31:40,432 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:31:40,440 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:31:40,478 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:31:40,494 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:34:29,586 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 15:34:29,587 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:34:29,634 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:34:29,635 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:34:29,635 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:34:29,636 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:34:29,757 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 15:34:29,804 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 15:34:33,973 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:34:35,478 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:34:35,478 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:34:35,479 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:34:35,479 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:34:35,480 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:34:35,480 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:34:35,481 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:34:35,719 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:34:35,721 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:34:35,722 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:34:35,724 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:34:35,724 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:34:35,813 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:34:35,814 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:34:38,714 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 15:34:38,715 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:34:38,763 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:34:38,763 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:34:38,764 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:34:38,768 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:34:38,879 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:34:39,044 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:34:39,059 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:34:39,067 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:34:39,074 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:34:39,082 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:34:39,090 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:34:39,097 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:34:39,105 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:34:39,143 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:34:39,158 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:34:39,201 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:34:39,232 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 15:35:58,168 [screen.py:_load_panel()] - Loading panel: move
+2026-05-14 15:35:58,382 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2026-05-14 15:36:00,162 [screen.py:_load_panel()] - Loading panel: menu
+2026-05-14 15:36:00,332 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move > menu
+2026-05-14 15:36:00,363 [menu.py:arrangeMenuItems()] - X > homing Z-Tilt
+2026-05-14 15:36:01,478 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:36:01,506 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2026-05-14 15:36:02,115 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move > menu
+2026-05-14 15:36:02,146 [menu.py:arrangeMenuItems()] - X > homing Z-Tilt
+2026-05-14 15:36:03,270 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2026-05-14 15:36:32,238 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:36:32,269 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2026-05-14 15:36:32,822 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:36:32,859 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:36:34,908 [screen.py:show_panel()] - Reinitializing panel gcodes
+2026-05-14 15:36:34,929 [gcodes.py:__init__()] - Thumbsize: 196.3
+2026-05-14 15:36:35,022 [gcodes.py:__init__()] - list
+2026-05-14 15:36:35,045 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2026-05-14 15:36:35,065 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > gcodes
+2026-05-14 15:36:36,452 [gcodes.py:load_files()] - Loaded in 1.202 seconds
+2026-05-14 15:36:44,679 [KlippyGtk.py:Dialog()] - Showing dialog Print 1-6_PETG_0.3_1h24m.gcode (width=1366, height=768)
+2026-05-14 15:36:47,910 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:36:47,911 [gcodes.py:confirm_print_response()] - Starting print: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:36:47,911 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2026-05-14 15:36:48,103 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 15:36:48,103 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 15:36:48,179 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:36:48,180 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:36:48,181 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:36:48,342 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-05-14 15:36:48,462 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:36:48,477 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 15:36:48,494 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:36:48,495 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 15:36:50,542 [screen.py:_go_to_submenu()] - #### Go to submenu 
+2026-05-14 15:36:50,542 [screen.py:_go_to_submenu()] - #### Menu __print
+2026-05-14 15:36:50,551 [screen.py:show_panel()] - Reinitializing panel menu
+2026-05-14 15:36:50,630 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:36:50,869 [screen.py:attach_panel()] - Current panel hierarchy: job_status > 
+2026-05-14 15:36:50,897 [menu.py:arrangeMenuItems()] - X > move
+2026-05-14 15:36:50,911 [menu.py:arrangeMenuItems()] - X > power
+2026-05-14 15:36:50,948 [menu.py:arrangeMenuItems()] - X > spoolman
+2026-05-14 15:36:50,948 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:36:50,984 [screen.py:_go_to_submenu()] - menu, {{ gettext('Print Control') }}, panel_name=, items=[{'temperature': {'name': "{{ gettext('Temperature') }}", 'icon': 'heat-up', 'panel': 'temperature', 'method': None, 'confirm': None, 'enable': '{{ (printer.temperature_devices.count > 0) or (printer.extruders.count > 0)}}', 'params': '{}', 'style': None}}, {'fan': {'name': "{{ gettext('Fan') }}", 'icon': 'fan', 'panel': 'fan', 'method': None, 'confirm': None, 'enable': '{{ printer.fans.count > 0 }}', 'params': '{}', 'style': None}}, {'move': {'name': "{{ gettext('Move') }}", 'icon': 'move', 'panel': 'move', 'method': None, 'confirm': None, 'enable': '{{ printer.pause_resume.is_paused }}', 'params': '{}', 'style': None}}, {'extrude': {'name': "{{ gettext('Extrude') }}", 'icon': 'extrude', 'panel': 'extrude', 'method': None, 'confirm': None, 'enable': '{{ printer.extruders.count > 0 }}', 'params': '{}', 'style': None}}, {'power': {'name': "{{ gettext('Power') }}", 'icon': 'shutdown', 'panel': 'power', 'method': None, 'confirm': None, 'enable': '{{ moonraker.power_devices.count > 0 }}', 'params': '{}', 'style': None}}, {'led': {'name': "{{ gettext('Leds') }}", 'icon': 'light', 'panel': 'led', 'method': None, 'confirm': None, 'enable': '{{ printer.leds.count > 0 }}', 'params': '{}', 'style': None}}, {'macros': {'name': "{{ gettext('Macros') }}", 'icon': 'custom-script', 'panel': 'gcode_macros', 'method': None, 'confirm': None, 'enable': '{{ printer.gcode_macros.count > 0 }}', 'params': '{}', 'style': None}}, {'notifications': {'name': "{{ gettext('Notifications') }}", 'icon': 'notifications', 'panel': 'notifications', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'camera': {'name': "{{ gettext('Camera') }}", 'icon': 'camera', 'panel': 'camera', 'method': None, 'confirm': None, 'enable': '{{ moonraker.cameras.count > 0 }}', 'params': '{}', 'style': None}}, {'console': {'name': "{{ gettext('Console') }}", 'icon': 'console', 'panel': 'console', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'limits': {'name': "{{ gettext('Limits') }}", 'icon': 'fine-tune', 'panel': 'limits', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'network': {'name': "{{ gettext('Network') }}", 'icon': 'network', 'panel': 'network', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'settings': {'name': 'KlipperScreen', 'icon': 'settings', 'panel': 'settings', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'spoolman': {'name': 'Spoolman', 'icon': 'spoolman', 'panel': 'spoolman', 'method': None, 'confirm': None, 'enable': '{{ moonraker.spoolman }}', 'params': '{}', 'style': None}}, {'system': {'name': "{{ gettext('System') }}", 'icon': 'info', 'panel': 'system', 'method': None, 'confirm': None, 'enable': '{{ moonraker_connected }}', 'params': '{}', 'style': None}}, {'pins': {'name': "{{ gettext('Pins') }}", 'icon': 'hashtag', 'panel': 'pins', 'method': None, 'confirm': None, 'enable': '{{ printer.output_pins.count > 0 or printer.pwm_tools.count > 0 }}', 'params': '{}', 'style': None}}, {'lock': {'name': "{{ gettext('Lock') }}", 'icon': 'lock', 'panel': 'lock_screen', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}]
+2026-05-14 15:36:52,410 [screen.py:show_panel()] - Reinitializing panel console
+2026-05-14 15:36:52,467 [screen.py:attach_panel()] - Current panel hierarchy: job_status >  > console
+2026-05-14 15:41:41,500 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:41:41,535 [screen.py:attach_panel()] - Current panel hierarchy: job_status > 
+2026-05-14 15:41:41,561 [menu.py:arrangeMenuItems()] - X > move
+2026-05-14 15:41:41,576 [menu.py:arrangeMenuItems()] - X > power
+2026-05-14 15:41:41,613 [menu.py:arrangeMenuItems()] - X > spoolman
+2026-05-14 15:41:41,613 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 15:41:51,132 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:41:51,183 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:41:52,783 [screen.py:_load_panel()] - Loading panel: fine_tune
+2026-05-14 15:41:52,875 [screen.py:attach_panel()] - Current panel hierarchy: job_status > fine_tune
+2026-05-14 15:41:56,174 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:42:02,676 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 15:42:04,132 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 15:42:05,597 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 15:42:07,869 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 15:42:09,196 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 15:42:10,269 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 15:42:16,072 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.01 MOVE=1'}
+2026-05-14 15:42:19,884 [fine_tune.py:change_percent_delta()] - ### Delta 0.05
+2026-05-14 15:42:20,622 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:42:23,926 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:42:28,014 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:42:37,526 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:42:42,676 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:42:42,742 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:42:44,403 [KlippyGtk.py:Dialog()] - Showing dialog Cancel (width=1366, height=768)
+2026-05-14 15:42:45,784 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:42:45,785 [job_status.py:cancel_confirm()] - Canceling print
+2026-05-14 15:42:45,790 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelling'
+2026-05-14 15:42:45,798 [KlippyWebsocket.py:print_cancel()] - Sending printer.print.cancel
+2026-05-14 15:42:46,127 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-05-14 15:42:46,128 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:42:46,145 [job_status.py:set_state()] - Changing job_status state from 'cancelling' to 'cancelled'
+2026-05-14 15:42:46,284 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:42:46,284 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:42:48,545 [screen.py:show_popup_message()] - error: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 15:42:51,516 [job_status.py:close_panel()] - Closing job_status panel
+2026-05-14 15:42:51,517 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:42:51,521 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:42:51,638 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:42:51,797 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:42:51,812 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:42:51,820 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:42:51,827 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:42:51,834 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:42:51,842 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:42:51,850 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:42:51,858 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:42:51,896 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:42:51,913 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:43:51,067 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 15:43:51,068 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 15:43:51,116 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:43:51,116 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:43:51,117 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 15:43:51,118 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:43:51,235 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 15:43:51,283 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 15:43:55,974 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 15:43:56,977 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 15:43:56,978 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 15:43:56,978 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 15:43:56,979 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 15:43:56,979 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 15:43:56,979 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 15:43:56,980 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 15:43:57,219 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 15:43:57,221 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 15:43:57,222 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 15:43:57,224 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 15:43:57,224 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 15:43:57,334 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:43:57,334 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:44:00,212 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 15:44:00,212 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:44:00,265 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:44:00,265 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:44:00,266 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 15:44:00,270 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:44:00,394 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 15:44:00,561 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 15:44:00,577 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 15:44:00,585 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:44:00,592 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:44:00,600 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:44:00,607 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:44:00,615 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:44:00,624 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:44:00,664 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 15:44:00,678 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:44:00,731 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:44:00,761 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 15:44:05,582 [screen.py:_load_panel()] - Loading panel: temperature
+2026-05-14 15:44:05,606 [temperature.py:add_device()] - Adding device: extruder
+2026-05-14 15:44:05,618 [temperature.py:add_device()] - Adding device: heater_bed
+2026-05-14 15:44:05,627 [temperature.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 15:44:05,643 [temperature.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 15:44:05,651 [temperature.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 15:44:05,659 [temperature.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 15:44:05,667 [temperature.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 15:44:05,725 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > temperature
+2026-05-14 15:44:05,729 [temperature.py:select_heater()] - Selecting extruder
+2026-05-14 15:44:05,731 [temperature.py:select_heater()] - Selecting heater_bed
+2026-05-14 15:44:08,850 [temperature.py:select_heater()] - Deselecting extruder
+2026-05-14 15:44:10,602 [temperature.py:set_temperature()] - {'bed': 80.0, 'extruder': 240.0}
+2026-05-14 15:44:10,602 [temperature.py:set_temperature()] - {'bed': 80.0, 'extruder': 240.0}
+2026-05-14 15:44:10,602 [KlippyWebsocket.py:set_bed_temp()] - Sending set_bed_temp: M140 S80.0
+2026-05-14 15:44:12,094 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:44:12,128 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 15:45:05,008 [screen.py:show_panel()] - Reinitializing panel gcodes
+2026-05-14 15:45:05,031 [gcodes.py:__init__()] - Thumbsize: 196.3
+2026-05-14 15:45:05,140 [gcodes.py:__init__()] - list
+2026-05-14 15:45:05,153 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2026-05-14 15:45:05,175 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > gcodes
+2026-05-14 15:45:06,613 [gcodes.py:load_files()] - Loaded in 1.245 seconds
+2026-05-14 15:45:11,651 [KlippyGtk.py:Dialog()] - Showing dialog Print 1-6_PETG_0.3_1h24m.gcode (width=1366, height=768)
+2026-05-14 15:45:12,885 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:45:12,885 [gcodes.py:confirm_print_response()] - Starting print: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:45:12,885 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2026-05-14 15:45:12,927 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 15:45:12,927 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 15:45:13,015 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:45:13,016 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:45:13,016 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 15:45:13,183 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-05-14 15:45:13,335 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:45:13,351 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 15:45:13,379 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:45:13,381 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 15:50:18,984 [screen.py:show_panel()] - Reinitializing panel fine_tune
+2026-05-14 15:50:19,050 [screen.py:attach_panel()] - Current panel hierarchy: job_status > fine_tune
+2026-05-14 15:50:19,937 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:50:49,376 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:51:10,673 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 15:51:39,768 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 15:51:39,801 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 15:51:41,421 [KlippyGtk.py:Dialog()] - Showing dialog Cancel (width=1366, height=768)
+2026-05-14 15:51:42,443 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 15:51:42,444 [job_status.py:cancel_confirm()] - Canceling print
+2026-05-14 15:51:42,450 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelling'
+2026-05-14 15:51:42,461 [KlippyWebsocket.py:print_cancel()] - Sending printer.print.cancel
+2026-05-14 15:51:42,709 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-05-14 15:51:42,710 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 15:51:42,733 [job_status.py:set_state()] - Changing job_status state from 'cancelling' to 'cancelled'
+2026-05-14 15:51:42,855 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 15:51:42,855 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 15:51:45,711 [screen.py:show_popup_message()] - error: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 17:20:43,151 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 17:20:43,151 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 17:20:43,208 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:20:43,209 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:20:43,209 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 17:20:43,211 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:20:43,329 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 17:20:43,397 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 17:20:47,977 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 17:20:49,166 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 17:20:49,166 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 17:20:49,167 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 17:20:49,167 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 17:20:49,167 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 17:20:49,168 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 17:20:49,168 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 17:20:49,408 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 17:20:49,410 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 17:20:49,411 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 17:20:49,413 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 17:20:49,413 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 17:20:49,499 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:20:49,499 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:20:52,403 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 17:20:52,403 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 17:20:52,453 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:20:52,453 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:20:52,454 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 17:20:52,458 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:20:52,575 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 17:20:52,739 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 17:20:52,755 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 17:20:52,763 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:20:52,771 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:20:52,779 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:20:52,787 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:20:52,795 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:20:52,803 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:20:52,843 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 17:20:52,858 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:20:52,905 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:20:52,935 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 17:21:00,311 [screen.py:show_panel()] - Reinitializing panel move
+2026-05-14 17:21:00,421 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2026-05-14 17:21:01,696 [screen.py:show_panel()] - Reinitializing panel menu
+2026-05-14 17:21:01,857 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move > menu
+2026-05-14 17:21:01,889 [menu.py:arrangeMenuItems()] - X > homing Z-Tilt
+2026-05-14 17:21:02,596 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2026-05-14 17:22:20,805 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:22:20,849 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2026-05-14 17:22:22,204 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:22:22,238 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:22:23,672 [screen.py:show_panel()] - Reinitializing panel gcodes
+2026-05-14 17:22:23,698 [gcodes.py:__init__()] - Thumbsize: 196.3
+2026-05-14 17:22:23,802 [gcodes.py:__init__()] - list
+2026-05-14 17:22:23,816 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2026-05-14 17:22:23,837 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > gcodes
+2026-05-14 17:22:25,197 [gcodes.py:load_files()] - Loaded in 1.173 seconds
+2026-05-14 17:22:27,139 [KlippyGtk.py:Dialog()] - Showing dialog Print 1-6_PETG_0.3_1h24m.gcode (width=1366, height=768)
+2026-05-14 17:22:27,883 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 17:22:27,884 [gcodes.py:confirm_print_response()] - Starting print: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:22:27,884 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2026-05-14 17:22:28,019 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 17:22:28,020 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 17:22:28,098 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:22:28,099 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:22:28,099 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:22:28,253 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-05-14 17:22:28,392 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:22:28,409 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 17:22:28,432 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:22:28,433 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 17:28:53,948 [screen.py:show_panel()] - Reinitializing panel fine_tune
+2026-05-14 17:28:54,025 [screen.py:attach_panel()] - Current panel hierarchy: job_status > fine_tune
+2026-05-14 17:28:55,100 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:28:55,985 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:29:31,322 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:29:32,478 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:29:48,554 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:29:49,538 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:30:17,866 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:30:18,526 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:30:43,960 [fine_tune.py:change_percent_delta()] - ### Delta 0.01
+2026-05-14 17:30:44,634 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.01 MOVE=1'}
+2026-05-14 17:30:45,578 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.01 MOVE=1'}
+2026-05-14 17:31:25,386 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=+0.01 MOVE=1'}
+2026-05-14 17:31:26,288 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=+0.01 MOVE=1'}
+2026-05-14 17:31:41,589 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=+0.01 MOVE=1'}
+2026-05-14 17:31:42,311 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=+0.01 MOVE=1'}
+2026-05-14 17:33:00,410 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:33:00,442 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:33:01,187 [KlippyWebsocket.py:print_pause()] - Sending printer.print.pause
+2026-05-14 17:33:01,286 [printer.py:change_state()] - Changing state from 'printing' to 'paused'
+2026-05-14 17:33:01,287 [printer.py:change_state()] - Adding callback for state: paused
+2026-05-14 17:33:01,306 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'paused'
+2026-05-14 17:33:01,648 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:33:01,649 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:33:01,649 [screen.py:show_panel()] - Panel is already is in view
+2026-05-14 17:33:01,656 [screen.py:_load_panel()] - Loading panel: extrude
+2026-05-14 17:33:01,751 [screen.py:attach_panel()] - Current panel hierarchy: job_status > extrude
+2026-05-14 17:33:56,362 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:33:56,401 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:33:57,285 [KlippyGtk.py:Dialog()] - Showing dialog Cancel (width=1366, height=768)
+2026-05-14 17:33:58,020 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 17:33:58,020 [job_status.py:cancel_confirm()] - Canceling print
+2026-05-14 17:33:58,025 [job_status.py:set_state()] - Changing job_status state from 'paused' to 'cancelling'
+2026-05-14 17:33:58,033 [KlippyWebsocket.py:print_cancel()] - Sending printer.print.cancel
+2026-05-14 17:33:58,219 [printer.py:change_state()] - Changing state from 'paused' to 'ready'
+2026-05-14 17:33:58,219 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 17:33:58,239 [job_status.py:set_state()] - Changing job_status state from 'cancelling' to 'cancelled'
+2026-05-14 17:33:58,341 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:33:58,341 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:33:59,650 [job_status.py:close_panel()] - Closing job_status panel
+2026-05-14 17:33:59,651 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 17:33:59,655 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:33:59,775 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 17:33:59,942 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 17:33:59,963 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 17:33:59,971 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:33:59,978 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:33:59,986 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:33:59,993 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:34:00,001 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:34:00,008 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:34:00,046 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 17:34:00,060 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:34:01,082 [screen.py:show_popup_message()] - error: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 17:34:08,152 [screen.py:_go_to_submenu()] - #### Go to submenu more
+2026-05-14 17:34:08,152 [screen.py:_go_to_submenu()] - #### Menu __main
+2026-05-14 17:34:08,162 [screen.py:_load_panel()] - Loading panel: menu
+2026-05-14 17:34:08,253 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 17:34:08,552 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > more
+2026-05-14 17:34:08,565 [menu.py:arrangeMenuItems()] - X > more bedlevel
+2026-05-14 17:34:08,606 [menu.py:arrangeMenuItems()] - X > more power
+2026-05-14 17:34:08,643 [menu.py:arrangeMenuItems()] - X > more spoolman
+2026-05-14 17:34:08,644 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 17:34:08,673 [screen.py:_go_to_submenu()] - menu, {{ gettext('More') }}, panel_name=more, items=[{'more bedlevel': {'name': "{{ gettext('Bed Level') }}", 'icon': 'bed-level', 'panel': 'bed_level', 'method': None, 'confirm': None, 'enable': "{{ 'bed_screws' in printer.config_sections or 'screws_tilt_adjust' in printer.config_sections }}", 'params': '{}', 'style': None}}, {'more bedmesh': {'name': "{{ gettext('Bed Mesh') }}", 'icon': 'bed-mesh', 'panel': 'bed_mesh', 'method': None, 'confirm': None, 'enable': "{{ 'bed_mesh' in printer.config_sections }}", 'params': '{}', 'style': None}}, {'more zoffset': {'name': "{{ gettext('Z Calibrate') }}", 'icon': 'z-farther', 'panel': 'zcalibrate', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more limits': {'name': "{{ gettext('Limits') }}", 'icon': 'fine-tune', 'panel': 'limits', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more fan': {'name': "{{ gettext('Fan') }}", 'icon': 'fan', 'panel': 'fan', 'method': None, 'confirm': None, 'enable': '{{ printer.fans.count > 0 }}', 'params': '{}', 'style': None}}, {'more led': {'name': "{{ gettext('Leds') }}", 'icon': 'light', 'panel': 'led', 'method': None, 'confirm': None, 'enable': '{{ printer.leds.count > 0 }}', 'params': '{}', 'style': None}}, {'more macros': {'name': "{{ gettext('Macros') }}", 'icon': 'custom-script', 'panel': 'gcode_macros', 'method': None, 'confirm': None, 'enable': '{{ printer.gcode_macros.count > 0 }}', 'params': '{}', 'style': None}}, {'more pins': {'name': "{{ gettext('Pins') }}", 'icon': 'hashtag', 'panel': 'pins', 'method': None, 'confirm': None, 'enable': '{{ printer.output_pins.count > 0 or printer.pwm_tools.count > 0 }}', 'params': '{}', 'style': None}}, {'more power': {'name': "{{ gettext('Power') }}", 'icon': 'shutdown', 'panel': 'power', 'method': None, 'confirm': None, 'enable': '{{ moonraker.power_devices.count > 0 }}', 'params': '{}', 'style': None}}, {'more camera': {'name': "{{ gettext('Camera') }}", 'icon': 'camera', 'panel': 'camera', 'method': None, 'confirm': None, 'enable': '{{ moonraker.cameras.count > 0 }}', 'params': '{}', 'style': None}}, {'more console': {'name': "{{ gettext('Console') }}", 'icon': 'console', 'panel': 'console', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more updater': {'name': "{{ gettext('Update') }}", 'icon': 'refresh', 'panel': 'updater', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more input_shaper': {'name': "{{ gettext('Input Shaper') }}", 'icon': 'move', 'panel': 'input_shaper', 'method': None, 'confirm': None, 'enable': "{{ 'input_shaper' in printer.config_sections }}", 'params': '{}', 'style': None}}, {'more save': {'name': "{{ gettext('Save Config') }}", 'icon': 'complete', 'panel': None, 'method': 'ks_confirm_save', 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more settings': {'name': 'KlipperScreen', 'icon': 'settings', 'panel': 'settings', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more network': {'name': "{{ gettext('Network') }}", 'icon': 'network', 'panel': 'network', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more notifications': {'name': "{{ gettext('Notifications') }}", 'icon': 'notifications', 'panel': 'notifications', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}, {'more spoolman': {'name': 'Spoolman', 'icon': 'spoolman', 'panel': 'spoolman', 'method': None, 'confirm': None, 'enable': '{{ moonraker.spoolman }}', 'params': '{}', 'style': None}}, {'more system': {'name': "{{ gettext('System') }}", 'icon': 'info', 'panel': 'system', 'method': None, 'confirm': None, 'enable': '{{ moonraker_connected }}', 'params': '{}', 'style': None}}, {'more fine_tune': {'name': "{{ gettext('Fine Tuning') }}", 'icon': 'fine-tune', 'panel': 'fine_tune', 'method': None, 'confirm': None, 'enable': 'True', 'params': '{}', 'style': None}}]
+2026-05-14 17:34:09,797 [screen.py:_load_panel()] - Loading panel: zcalibrate
+2026-05-14 17:34:09,805 [zcalibrate.py:initialize_probe_params()] - Offset X:0.0 Y:0.0 Z:0.0
+2026-05-14 17:34:09,834 [zcalibrate.py:set_commands()] - Available commands for calibration: ['PROBE_CALIBRATE', 'BED_MESH_CALIBRATE METHOD=manual']
+2026-05-14 17:34:09,849 [zcalibrate.py:on_dropdown_change()] - Selected PROBE_CALIBRATE
+2026-05-14 17:34:09,881 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > more > zcalibrate
+2026-05-14 17:34:13,426 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:34:13,461 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > more
+2026-05-14 17:34:13,478 [menu.py:arrangeMenuItems()] - X > more bedlevel
+2026-05-14 17:34:13,523 [menu.py:arrangeMenuItems()] - X > more power
+2026-05-14 17:34:13,554 [menu.py:arrangeMenuItems()] - X > more spoolman
+2026-05-14 17:34:13,555 [menu.py:evaluate_enable()] - moonraker connected True
+2026-05-14 17:34:20,035 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:34:20,068 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:35:31,383 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 17:35:31,383 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 17:35:31,430 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:35:31,431 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:35:31,431 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 17:35:31,432 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:35:31,549 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 17:35:31,592 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 17:35:35,972 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 17:35:37,221 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 17:35:37,221 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 17:35:37,222 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 17:35:37,222 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 17:35:37,223 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 17:35:37,223 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 17:35:37,223 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 17:35:37,465 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 17:35:37,467 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 17:35:37,468 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 17:35:37,470 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 17:35:37,470 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 17:35:37,555 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:35:37,556 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:35:40,458 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 17:35:40,459 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 17:35:40,511 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:35:40,511 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:35:40,512 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 17:35:40,516 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:35:40,634 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 17:35:40,809 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 17:35:40,826 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 17:35:40,833 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:35:40,841 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:35:40,848 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:35:40,857 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:35:40,865 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:35:40,872 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:35:40,914 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 17:35:40,929 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:35:40,979 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:35:41,009 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 17:37:21,431 [screen.py:show_panel()] - Reinitializing panel gcodes
+2026-05-14 17:37:21,455 [gcodes.py:__init__()] - Thumbsize: 196.3
+2026-05-14 17:37:21,560 [gcodes.py:__init__()] - list
+2026-05-14 17:37:21,571 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2026-05-14 17:37:21,593 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > gcodes
+2026-05-14 17:37:23,089 [gcodes.py:load_files()] - Loaded in 1.295 seconds
+2026-05-14 17:37:24,703 [KlippyGtk.py:Dialog()] - Showing dialog Print 1-6_PETG_0.3_1h24m.gcode (width=1366, height=768)
+2026-05-14 17:37:25,540 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 17:37:25,540 [gcodes.py:confirm_print_response()] - Starting print: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:37:25,541 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2026-05-14 17:37:25,763 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 17:37:25,764 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 17:37:25,844 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:37:25,845 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:37:25,846 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:37:26,022 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-05-14 17:37:26,157 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:37:26,173 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 17:37:26,191 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:37:26,192 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 17:42:02,540 [screen.py:show_panel()] - Reinitializing panel fine_tune
+2026-05-14 17:42:02,617 [screen.py:attach_panel()] - Current panel hierarchy: job_status > fine_tune
+2026-05-14 17:42:06,263 [fine_tune.py:change_percent_delta()] - ### Delta 0.05
+2026-05-14 17:42:10,232 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:42:10,289 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:42:11,512 [screen.py:attach_panel()] - Current panel hierarchy: job_status > fine_tune
+2026-05-14 17:42:18,402 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:42:19,202 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:42:20,034 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:42:20,673 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:42:21,337 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:42:22,145 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:42:37,794 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:43:11,986 [screen.py:_send_action()] - printer.gcode.script: {'script': 'SET_GCODE_OFFSET Z_ADJUST=-0.05 MOVE=1'}
+2026-05-14 17:43:55,872 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:43:55,913 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:43:57,054 [KlippyGtk.py:Dialog()] - Showing dialog Cancel (width=1366, height=768)
+2026-05-14 17:43:58,220 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2026-05-14 17:43:58,220 [job_status.py:cancel_confirm()] - Canceling print
+2026-05-14 17:43:58,225 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelling'
+2026-05-14 17:43:58,234 [KlippyWebsocket.py:print_cancel()] - Sending printer.print.cancel
+2026-05-14 17:43:58,407 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-05-14 17:43:58,407 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 17:43:58,437 [job_status.py:set_state()] - Changing job_status state from 'cancelling' to 'cancelled'
+2026-05-14 17:43:58,578 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:43:58,579 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:44:01,831 [screen.py:show_popup_message()] - error: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 17:44:37,930 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 17:44:37,930 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 17:44:37,977 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:44:37,978 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:44:37,978 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 17:44:37,979 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:44:38,096 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 17:44:38,142 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 17:44:41,973 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 17:44:43,967 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 17:44:43,967 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 17:44:43,968 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 17:44:43,968 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 17:44:43,968 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 17:44:43,969 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 17:44:43,969 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 17:44:44,210 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 17:44:44,212 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 17:44:44,213 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 17:44:44,215 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 17:44:44,216 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 17:44:44,315 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:44:44,316 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:44:47,121 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 17:44:47,122 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 17:44:47,192 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:44:47,193 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:44:47,193 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 17:44:47,200 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:44:47,342 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 17:44:47,509 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 17:44:47,525 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 17:44:47,532 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:44:47,539 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:44:47,547 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:44:47,554 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:44:47,562 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:44:47,569 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:44:47,613 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 17:44:47,633 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:44:47,678 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:44:47,701 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 17:46:16,840 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:46:19,327 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:46:36,803 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:47:54,097 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:47:56,579 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:48:03,413 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:48:12,192 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:48:47,933 [screen.py:show_panel()] - Reinitializing panel temperature
+2026-05-14 17:48:47,956 [warnings.py:_showwarnmsg()] - /home/biqu/KlipperScreen/panels/temperature.py:25: Warning: ../../../gobject/gsignal.c:2732: instance '0x27c536c0' has no handler with id '53907'
+  self.long_press = {}
+
+2026-05-14 17:48:47,958 [warnings.py:_showwarnmsg()] - /home/biqu/KlipperScreen/panels/temperature.py:25: Warning: ../../../gobject/gsignal.c:2732: instance '0x27d2b6c0' has no handler with id '53935'
+  self.long_press = {}
+
+2026-05-14 17:48:47,974 [temperature.py:add_device()] - Adding device: extruder
+2026-05-14 17:48:47,982 [temperature.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:48:47,990 [temperature.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:48:47,997 [temperature.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:48:48,005 [temperature.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:48:48,013 [temperature.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:48:48,020 [temperature.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:48:48,065 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > temperature
+2026-05-14 17:48:48,074 [temperature.py:select_heater()] - Selecting extruder
+2026-05-14 17:48:48,075 [temperature.py:select_heater()] - Selecting heater_bed
+2026-05-14 17:48:52,044 [temperature.py:select_heater()] - Deselecting heater_bed
+2026-05-14 17:49:04,612 [KlippyWebsocket.py:set_tool_temp()] - Sending set_tool_temp: M104 T0 S10.0
+2026-05-14 17:49:04,614 [temperature.py:change_target_temp_incremental()] - Setting extruder to 10.0
+2026-05-14 17:49:06,494 [temperature.py:change_temp_delta()] - ### tempdelta 25
+2026-05-14 17:49:07,084 [KlippyWebsocket.py:set_tool_temp()] - Sending set_tool_temp: M104 T0 S35.0
+2026-05-14 17:49:07,086 [temperature.py:change_target_temp_incremental()] - Setting extruder to 35.0
+2026-05-14 17:49:07,746 [KlippyWebsocket.py:set_tool_temp()] - Sending set_tool_temp: M104 T0 S60.0
+2026-05-14 17:49:07,748 [temperature.py:change_target_temp_incremental()] - Setting extruder to 60.0
+2026-05-14 17:49:09,796 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:49:09,830 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:49:33,850 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:49:36,374 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:49:38,863 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:49:40,938 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: 3 errors, last: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD. at toolhead z=-0.749
+
+2026-05-14 17:49:47,533 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:49:52,094 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:49:54,570 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.749: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:50:05,757 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2026-05-14 17:50:05,757 [printer.py:change_state()] - Adding callback for state: disconnected
+2026-05-14 17:50:05,811 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:50:05,812 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:50:05,812 [screen.py:state_disconnected()] - ### Going to disconnected
+2026-05-14 17:50:05,814 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:50:05,929 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2026-05-14 17:50:05,974 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2026-05-14 17:50:09,973 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'database', 'dbus_manager', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager', 'timelapse'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.9.3-130-g5b92e52', 'missing_klippy_requirements': [], 'api_version': [1, 5, 0], 'api_version_string': '1.5.0'}
+2026-05-14 17:50:11,856 [printer.py:log_counts()] - Klipper version: v0.13.0-435-g8b58aa13-dirty
+2026-05-14 17:50:11,856 [printer.py:log_counts()] - # Extruders: 1
+2026-05-14 17:50:11,857 [printer.py:log_counts()] - # Temperature devices: 6
+2026-05-14 17:50:11,857 [printer.py:log_counts()] - # Fans: 4
+2026-05-14 17:50:11,857 [printer.py:log_counts()] - # Output pins: 1
+2026-05-14 17:50:11,858 [printer.py:log_counts()] - # PWM tools: 0
+2026-05-14 17:50:11,858 [printer.py:log_counts()] - # Leds: 2
+2026-05-14 17:50:12,100 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2026-05-14 17:50:12,102 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2026-05-14 17:50:12,103 [screen.py:init_klipper()] - Printer initialized
+2026-05-14 17:50:12,105 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2026-05-14 17:50:12,105 [printer.py:change_state()] - Adding callback for state: startup
+2026-05-14 17:50:12,208 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:50:12,209 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:50:15,094 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2026-05-14 17:50:15,095 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 17:50:15,144 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:50:15,145 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:50:15,146 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 17:50:15,150 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:50:15,275 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 17:50:15,448 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 17:50:15,465 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 17:50:15,473 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:50:15,481 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:50:15,489 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:50:15,497 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:50:15,504 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:50:15,514 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:50:15,553 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 17:50:15,568 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:50:15,620 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:50:15,650 [screen.py:init_tempstore()] - Temperature store size: 1200
+2026-05-14 17:50:19,736 [screen.py:show_panel()] - Reinitializing panel temperature
+2026-05-14 17:50:19,753 [warnings.py:_showwarnmsg()] - /home/biqu/KlipperScreen/panels/temperature.py:25: Warning: ../../../gobject/gsignal.c:2732: instance '0x271c5ed0' has no handler with id '361007'
+  self.long_press = {}
+
+2026-05-14 17:50:19,754 [warnings.py:_showwarnmsg()] - /home/biqu/KlipperScreen/panels/temperature.py:25: Warning: ../../../gobject/gsignal.c:2732: instance '0x28142d30' has no handler with id '361035'
+  self.long_press = {}
+
+2026-05-14 17:50:19,775 [temperature.py:add_device()] - Adding device: extruder
+2026-05-14 17:50:19,783 [temperature.py:add_device()] - Adding device: heater_bed
+2026-05-14 17:50:19,792 [temperature.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 17:50:19,801 [temperature.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 17:50:19,810 [temperature.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 17:50:19,819 [temperature.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 17:50:19,828 [temperature.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 17:50:19,883 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > temperature
+2026-05-14 17:50:19,888 [temperature.py:select_heater()] - Selecting extruder
+2026-05-14 17:50:19,890 [temperature.py:select_heater()] - Selecting heater_bed
+2026-05-14 17:50:21,982 [temperature.py:select_heater()] - Deselecting heater_bed
+2026-05-14 17:50:24,725 [temperature.py:change_temp_delta()] - ### tempdelta 25
+2026-05-14 17:50:25,805 [KlippyWebsocket.py:set_tool_temp()] - Sending set_tool_temp: M104 T0 S25.0
+2026-05-14 17:50:25,806 [temperature.py:change_target_temp_incremental()] - Setting extruder to 25.0
+2026-05-14 17:50:26,525 [KlippyWebsocket.py:set_tool_temp()] - Sending set_tool_temp: M104 T0 S50.0
+2026-05-14 17:50:26,527 [temperature.py:change_target_temp_incremental()] - Setting extruder to 50.0
+2026-05-14 17:50:28,253 [temperature.py:change_temp_delta()] - ### tempdelta 10
+2026-05-14 17:50:28,982 [KlippyWebsocket.py:set_tool_temp()] - Sending set_tool_temp: M104 T0 S60.0
+2026-05-14 17:50:28,983 [temperature.py:change_target_temp_incremental()] - Setting extruder to 60.0
+2026-05-14 17:50:30,605 [screen.py:_menu_go_back()] - #### Menu go back
+2026-05-14 17:50:30,652 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2026-05-14 17:50:56,183 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: 5 errors, last: Tap detected too close to target z at toolhead z=-0.249
+
+2026-05-14 17:51:00,467 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.249: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:51:09,195 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.249: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:51:21,440 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: 5 errors, last: Tap detected too close to target z at toolhead z=-0.249
+
+2026-05-14 17:51:57,792 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: 5 errors, last: Tap detected too close to target z at toolhead z=-0.351
+
+2026-05-14 17:52:09,373 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.450: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:52:14,027 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.450: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:52:16,300 [screen.py:show_popup_message()] - error: EDDYng: Tap failed: 5 errors, last: Tap detected too close to target z at toolhead z=-0.450
+
+2026-05-14 17:52:24,203 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.699: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:52:28,971 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.699: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:54:30,424 [screen.py:show_popup_message()] - error: EDDYng: Tap failed with Z at -0.900: Error during homing probe: Probe completed movement before triggering. If this is a tap, try lowering TARGET_Z or adjusting the THRESHOLD.
+
+2026-05-14 17:55:38,670 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2026-05-14 17:55:38,671 [printer.py:change_state()] - Adding callback for state: printing
+2026-05-14 17:55:38,851 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 17:55:38,852 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 17:55:38,852 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 17:55:38,967 [screen.py:show_panel()] - Reinitializing panel job_status
+2026-05-14 17:55:39,094 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2026-05-14 17:55:39,108 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2026-05-14 17:55:39,134 [job_status.py:update_filename()] - Updating filename to 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:55:39,135 [job_status.py:_update_file_metadata()] - Update Metadata. File: 1-6_PETG_0.3_1h24m.gcode Size: 10976749
+2026-05-14 19:35:05,300 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2026-05-14 19:35:05,301 [printer.py:change_state()] - Adding callback for state: ready
+2026-05-14 19:35:05,321 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2026-05-14 19:35:05,424 [screen.py:set_dpms_timeout()] - DPMS on :0 set to: 3600
+2026-05-14 19:35:05,425 [screen.py:set_screenblanking_timeout()] - Blanking timeout: 3600
+2026-05-14 19:35:12,664 [job_status.py:close_panel()] - Closing job_status panel
+2026-05-14 19:35:12,665 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2026-05-14 19:35:12,680 [screen.py:_remove_all_panels()] - Removing all panels
+2026-05-14 19:35:12,855 [screen.py:show_panel()] - Reinitializing panel main_menu
+2026-05-14 19:35:13,086 [main_menu.py:__init__()] - ### Making MainMenu
+2026-05-14 19:35:13,110 [main_menu.py:add_device()] - Adding device: extruder
+2026-05-14 19:35:13,121 [main_menu.py:add_device()] - Adding device: heater_bed
+2026-05-14 19:35:13,132 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy_mcu
+2026-05-14 19:35:13,143 [main_menu.py:add_device()] - Adding device: temperature_sensor btt_eddy
+2026-05-14 19:35:13,156 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu_temp
+2026-05-14 19:35:13,167 [main_menu.py:add_device()] - Adding device: temperature_sensor Host_temp
+2026-05-14 19:35:13,184 [main_menu.py:add_device()] - Adding device: temperature_sensor Toolhead_Temp
+2026-05-14 19:35:13,250 [menu.py:arrangeMenuItems()] - X > gcodes
+2026-05-14 19:35:13,276 [screen.py:attach_panel()] - Current panel hierarchy: main_menu

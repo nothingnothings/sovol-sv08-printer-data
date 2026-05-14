@@ -200,3 +200,330 @@ Git Repo KlipperScreen: No warnings detected
 Klipper Version: v0.13.0-435-g8b58aa13-dirty
 2026-05-14 14:53:27,344 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.219
 2026-05-14 14:53:27,345 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-05-14 15:08:02,000 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/biqu/moonraker/moonraker/components/machine.py", line 673, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/biqu/moonraker/moonraker/components/shell_command.py", line 278, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-05-14 15:10:09,603 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.219
+2026-05-14 15:12:35,843 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Z axis must be homed before tapping
+2026-05-14 15:14:31,813 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryQvCSPr8bIff9yeIg
+2026-05-14 15:14:31,840 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 15:14:31,856 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 45.54ms
+2026-05-14 15:19:25,451 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryD35ShppMADBJTn6X
+2026-05-14 15:19:25,482 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-05-14 15:19:25,495 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 47.91ms
+2026-05-14 15:19:26,627 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:19:27,894 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:19:30,966 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-05-14 15:19:35,778 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:19:35,782 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:19:35,835 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:19:36,029 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 15:19:36,305 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 15:19:36,781 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:19:59,110 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:19:59,349 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:20:30,682 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-05-14 15:20:30,697 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1778772001.339223, Usage: 2.53%, Memory: 52472 kB
+System Time: 1778772002.341448, Usage: 3.71%, Memory: 52472 kB
+System Time: 1778772003.340812, Usage: 3.18%, Memory: 52472 kB
+System Time: 1778772004.342608, Usage: 3.64%, Memory: 52472 kB
+System Time: 1778772005.340886, Usage: 2.86%, Memory: 52472 kB
+System Time: 1778772006.344218, Usage: 2.65%, Memory: 52472 kB
+System Time: 1778772007.341719, Usage: 3.34%, Memory: 52472 kB
+System Time: 1778772008.342050, Usage: 2.36%, Memory: 52472 kB
+System Time: 1778772009.346293, Usage: 2.97%, Memory: 52472 kB
+System Time: 1778772010.344246, Usage: 2.88%, Memory: 52472 kB
+System Time: 1778772011.349583, Usage: 2.49%, Memory: 52472 kB
+System Time: 1778772012.346975, Usage: 4.79%, Memory: 52472 kB
+System Time: 1778772013.346961, Usage: 2.6%, Memory: 52472 kB
+System Time: 1778772014.347307, Usage: 2.72%, Memory: 52472 kB
+System Time: 1778772015.347753, Usage: 2.65%, Memory: 52472 kB
+System Time: 1778772016.349149, Usage: 2.63%, Memory: 52472 kB
+System Time: 1778772017.349484, Usage: 2.63%, Memory: 52472 kB
+System Time: 1778772018.349149, Usage: 2.85%, Memory: 52472 kB
+System Time: 1778772019.349422, Usage: 2.62%, Memory: 52472 kB
+System Time: 1778772020.355085, Usage: 2.5%, Memory: 52472 kB
+System Time: 1778772021.350144, Usage: 3.62%, Memory: 52472 kB
+System Time: 1778772022.349984, Usage: 3.69%, Memory: 52472 kB
+System Time: 1778772023.349609, Usage: 2.81%, Memory: 52472 kB
+System Time: 1778772024.349767, Usage: 2.49%, Memory: 52472 kB
+System Time: 1778772025.350431, Usage: 3.24%, Memory: 52472 kB
+System Time: 1778772026.350276, Usage: 2.87%, Memory: 52472 kB
+System Time: 1778772027.350929, Usage: 3.06%, Memory: 52472 kB
+System Time: 1778772028.350292, Usage: 2.9%, Memory: 52472 kB
+System Time: 1778772029.354419, Usage: 2.95%, Memory: 52472 kB
+System Time: 1778772030.350518, Usage: 3.05%, Memory: 52472 kB
+CPU Temperature: 46.313
+2026-05-14 15:20:53,592 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:20:54,855 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:21:02,114 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:21:02,118 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:21:02,122 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2026-05-14 15:21:07,259 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:21:08,523 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:21:14,702 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:21:15,964 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:21:23,297 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:21:23,301 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:21:23,305 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'extra_mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2026-05-14 15:21:28,816 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:21:28,822 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Disconnected
+2026-05-14 15:21:30,085 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:21:37,227 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:21:37,231 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:21:37,235 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'extra_mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2026-05-14 15:21:40,366 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:21:41,627 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:21:49,558 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:21:49,744 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:21:49,748 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:21:50,012 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 15:21:50,276 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 15:21:50,765 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:22:51,871 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarycNRWHRB5NwcS93Z8
+2026-05-14 15:22:51,897 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-05-14 15:22:51,910 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 41.39ms
+2026-05-14 15:22:52,827 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:22:54,091 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:23:02,180 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:23:02,368 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:23:02,372 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:23:02,592 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 15:23:02,882 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 15:23:03,605 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:24:11,970 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryJwVluznpoJRwBBSh
+2026-05-14 15:24:11,992 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-05-14 15:24:12,004 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 36.40ms
+2026-05-14 15:24:13,221 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:24:14,484 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:24:22,266 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:24:22,454 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:24:22,459 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:24:22,708 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 15:24:22,976 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 15:24:23,478 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:25:08,316 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:25:08,590 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:29:40,747 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-05-14 15:31:29,814 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2026-05-14 15:31:33,223 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.cancel, Code: 400, Message: Unknown gcode_macro variable 'state'
+2026-05-14 15:31:40,087 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:32:54,749 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryFLHlARUAy16AOBdD
+2026-05-14 15:32:54,779 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-05-14 15:32:54,793 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 46.23ms
+2026-05-14 15:34:28,622 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryzLrzYjRmAfgLIS8z
+2026-05-14 15:34:28,647 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 15:34:28,661 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 42.29ms
+2026-05-14 15:34:29,581 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:34:30,842 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:34:38,706 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:34:38,710 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:34:38,767 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:34:38,965 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 15:34:39,240 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 15:34:39,723 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:36:47,915 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:36:48,085 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:41:25,860 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-05-14 15:42:45,802 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2026-05-14 15:42:48,542 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.cancel, Code: 400, Message: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 15:42:51,520 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:43:47,667 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryx4zKjKpogtlMckvs
+2026-05-14 15:43:47,694 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 15:43:47,707 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 43.12ms
+2026-05-14 15:43:50,111 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryoG5rV0L2Hk38VlMb
+2026-05-14 15:43:50,135 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 15:43:50,149 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 39.81ms
+2026-05-14 15:43:51,062 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 15:43:52,326 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 15:44:00,205 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 15:44:00,209 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 15:44:00,269 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 15:44:00,456 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 15:44:00,739 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 15:44:01,221 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 15:45:12,890 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:45:12,917 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 15:50:11,989 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-05-14 15:51:42,465 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2026-05-14 15:51:45,708 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.cancel, Code: 400, Message: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 16:48:27,357 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.219
+2026-05-14 16:48:27,357 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-05-14 17:20:22,838 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.219
+2026-05-14 17:20:42,134 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryEI6SFtlduOrmkPQi
+2026-05-14 17:20:42,165 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 17:20:42,183 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 50.09ms
+2026-05-14 17:20:43,144 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 17:20:44,409 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 17:20:47,968 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-05-14 17:20:52,396 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 17:20:52,399 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 17:20:52,457 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 17:20:52,647 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 17:20:52,930 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 17:20:53,424 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:22:27,888 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:22:28,002 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:28:36,131 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-05-14 17:33:01,191 [klippy_apis.py:pause_print()] - Requesting job pause...
+2026-05-14 17:33:58,037 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2026-05-14 17:33:59,654 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 17:34:00,988 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.cancel, Code: 400, Message: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 17:34:33,545 [application.py:log_request()] - 101 GET /websocket (192.168.0.219) [_TRUSTED_USER_] 4.38ms
+2026-05-14 17:34:33,546 [websockets.py:open()] - Websocket Opened: ID: 281473460159632, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-05-14 17:34:33,563 [websockets.py:_handle_identify()] - Websocket 281473460159632 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-05-14 17:35:04,804 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryyJxMnD9NpuAodB4Y
+2026-05-14 17:35:04,828 [application.py:post()] - Processing Uploaded File: sovol-macros.cfg
+2026-05-14 17:35:04,840 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 38.27ms
+2026-05-14 17:35:30,388 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryLoxCxMF4Md6R0QwI
+2026-05-14 17:35:30,409 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 17:35:30,422 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 36.01ms
+2026-05-14 17:35:31,316 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 17:35:32,579 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 17:35:40,451 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 17:35:40,456 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 17:35:40,515 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 17:35:40,730 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 17:35:41,015 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 17:35:41,719 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:37:25,544 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:37:25,746 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:41:56,623 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-05-14 17:43:58,239 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2026-05-14 17:44:01,833 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.cancel, Code: 400, Message: Unknown gcode_macro variable 'record_extruder_temp'
+2026-05-14 17:44:36,874 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryYQ58kcCzCl5DdRVg
+2026-05-14 17:44:36,898 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 17:44:36,911 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 41.60ms
+2026-05-14 17:44:37,924 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 17:44:39,186 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 17:44:47,198 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 17:44:47,428 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 17:44:47,432 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 17:44:47,604 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 17:44:47,911 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 17:44:48,617 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:46:19,325 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:48:03,412 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:49:40,934 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:49:54,569 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:50:04,497 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryFQHWhAczEvevQA7n
+2026-05-14 17:50:04,519 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 17:50:04,532 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 37.45ms
+2026-05-14 17:50:05,690 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-05-14 17:50:06,957 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-05-14 17:50:15,086 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-05-14 17:50:15,091 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-05-14 17:50:15,149 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 17:50:15,349 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-05-14 17:50:15,656 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-05-14 17:50:16,351 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor btt_eddy_mcu', 'temperature_sensor btt_eddy', 'heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-05-14 17:50:56,179 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:51:09,196 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:51:21,388 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:51:57,753 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:52:16,293 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Tap failed
+2026-05-14 17:55:38,382 [klippy_apis.py:start_print()] - Requesting Job Start, filename = 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 17:55:38,652 [job_state.py:_send_job_event()] - Job Started: 1-6_PETG_0.3_1h24m.gcode
+2026-05-14 18:00:45,824 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-05-14 18:12:15,038 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000002.jpg) successfully finished
+2026-05-14 18:18:19,862 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000003.jpg) successfully finished
+2026-05-14 18:18:25,108 [application.py:prepare()] - Upload Request Received from 192.168.0.219
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarycEK0nvQB6cE9IO6m
+2026-05-14 18:18:25,130 [application.py:post()] - Processing Uploaded File: eddy.cfg
+2026-05-14 18:18:25,143 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.219) [_TRUSTED_USER_] 37.49ms
+2026-05-14 18:23:02,366 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000004.jpg) successfully finished
+2026-05-14 18:27:16,599 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000005.jpg) successfully finished
+2026-05-14 18:32:06,420 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000006.jpg) successfully finished
+2026-05-14 18:36:19,258 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000007.jpg) successfully finished
+2026-05-14 18:40:28,418 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000008.jpg) successfully finished
+2026-05-14 18:41:35,999 [websockets.py:on_close()] - Websocket Closed: ID: 281473460159632 Close Code: None, Close Reason: None, Pong Time Elapsed: 22.05
+2026-05-14 18:41:36,003 [websockets.py:on_close()] - Websocket Closed: ID: 281473433698160 Close Code: None, Close Reason: None, Pong Time Elapsed: 13932.78
+2026-05-14 18:45:23,882 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000009.jpg) successfully finished
+2026-05-14 18:49:43,315 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000010.jpg) successfully finished
+2026-05-14 18:53:34,375 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000011.jpg) successfully finished
+2026-05-14 18:58:22,943 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000012.jpg) successfully finished
+2026-05-14 18:58:27,373 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-05-14 19:03:08,470 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000013.jpg) successfully finished
+2026-05-14 19:07:11,537 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000014.jpg) successfully finished
+2026-05-14 19:12:00,137 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000015.jpg) successfully finished
+2026-05-14 19:13:17,235 [application.py:log_request()] - 101 GET /websocket (192.168.0.219) [_TRUSTED_USER_] 4.49ms
+2026-05-14 19:13:17,236 [websockets.py:open()] - Websocket Opened: ID: 281473214530752, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-05-14 19:13:17,378 [websockets.py:_handle_identify()] - Websocket 281473214530752 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-05-14 19:13:19,286 [application.py:log_request()] - 101 GET /websocket (192.168.0.219) [_TRUSTED_USER_] 4.01ms
+2026-05-14 19:13:19,287 [websockets.py:open()] - Websocket Opened: ID: 281473433696672, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-05-14 19:13:19,295 [websockets.py:_handle_identify()] - Websocket 281473433696672 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-05-14 19:16:15,033 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000016.jpg) successfully finished
+2026-05-14 19:20:30,926 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000017.jpg) successfully finished
+2026-05-14 19:27:07,691 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000018.jpg) successfully finished
+2026-05-14 19:27:21,824 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000019.jpg) successfully finished
+2026-05-14 19:27:35,990 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000020.jpg) successfully finished
+2026-05-14 19:27:50,390 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000021.jpg) successfully finished
+2026-05-14 19:28:04,796 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000022.jpg) successfully finished
+2026-05-14 19:28:19,023 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000023.jpg) successfully finished
+2026-05-14 19:28:33,355 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000024.jpg) successfully finished
+2026-05-14 19:28:47,687 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000025.jpg) successfully finished
+2026-05-14 19:29:02,021 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000026.jpg) successfully finished
+2026-05-14 19:29:16,322 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000027.jpg) successfully finished
+2026-05-14 19:29:30,994 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000028.jpg) successfully finished
+2026-05-14 19:29:45,519 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000029.jpg) successfully finished
+2026-05-14 19:30:00,323 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000030.jpg) successfully finished
+2026-05-14 19:30:14,755 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000031.jpg) successfully finished
+2026-05-14 19:30:29,819 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000032.jpg) successfully finished
+2026-05-14 19:30:43,755 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000033.jpg) successfully finished
+2026-05-14 19:30:57,591 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000034.jpg) successfully finished
+2026-05-14 19:31:11,657 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000035.jpg) successfully finished
+2026-05-14 19:31:25,521 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000036.jpg) successfully finished
+2026-05-14 19:31:39,456 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000037.jpg) successfully finished
+2026-05-14 19:31:53,090 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000038.jpg) successfully finished
+2026-05-14 19:32:06,955 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000039.jpg) successfully finished
+2026-05-14 19:32:21,421 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000040.jpg) successfully finished
+2026-05-14 19:32:35,722 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000041.jpg) successfully finished
+2026-05-14 19:32:49,855 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000042.jpg) successfully finished
+2026-05-14 19:33:04,058 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000043.jpg) successfully finished
+2026-05-14 19:33:18,252 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000044.jpg) successfully finished
+2026-05-14 19:33:32,357 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000045.jpg) successfully finished
+2026-05-14 19:33:46,619 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000046.jpg) successfully finished
+2026-05-14 19:34:00,955 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000047.jpg) successfully finished
+2026-05-14 19:34:15,087 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000048.jpg) successfully finished
+2026-05-14 19:34:29,253 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000049.jpg) successfully finished
+2026-05-14 19:34:43,518 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000050.jpg) successfully finished
+2026-05-14 19:35:05,312 [timelapse.py:render()] - start FFMPEG: /usr/bin/ffmpeg -r 30 -i '/tmp/timelapse/frame%6d.jpg' -threads 2 -g 5 -crf 23 -vcodec libx264 -pix_fmt yuv420p -an  '/tmp/timelapse/timelapse_1-6_PETG_0.3_1h24m.gcode_20260514_1935.mp4' -y
+2026-05-14 19:35:12,670 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-05-14 19:35:15,747 [timelapse.py:render()] - Rendering Video successful: timelapse_1-6_PETG_0.3_1h24m.gcode_20260514_1935.mp4
