@@ -1200,3 +1200,143 @@ Pinned Commit: None
 2026-08-18 21:09:42,345 [application.py:log_request()] - 101 GET /websocket (192.168.0.183) [_TRUSTED_USER_] 7.42ms
 2026-08-18 21:09:42,346 [websockets.py:open()] - Websocket Opened: ID: 281473170385360, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36, Host Name: 192.168.0.209
 2026-08-18 21:09:42,363 [websockets.py:_handle_identify()] - Websocket 281473170385360 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-08-18 21:20:23,857 [application.py:prepare()] - Upload Request Received from 192.168.0.183
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryE62oZPPqeGcAkzbD
+2026-08-18 21:20:23,920 [application.py:post()] - Processing Uploaded File: sovol-macros-2.cfg
+2026-08-18 21:20:23,980 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.183) [_TRUSTED_USER_] 128.04ms
+2026-08-18 21:20:24,867 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 21:20:26,149 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 21:20:26,529 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 21:20:26,531 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 21:20:26,534 [klippy_connection.py:_check_ready()] - 
+File contains no section headers.
+file: '/home/biqu/printer_data/config/sovol-macros-2.cfg', line: 1
+'3[gcode_macro mainled_on]\n'
+
+Once the underlying issue is corrected, use the "RESTART"
+command to reload the config and restart the host software.
+Printer is halted
+
+2026-08-18 21:21:34,806 [application.py:prepare()] - Upload Request Received from 192.168.0.183
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryOBTSmc7gs69p8AU7
+2026-08-18 21:21:34,844 [application.py:post()] - Processing Uploaded File: sovol-macros-2.cfg
+2026-08-18 21:21:34,867 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.183) [_TRUSTED_USER_] 64.76ms
+2026-08-18 21:21:34,890 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 21:21:34,895 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2026-08-18 21:21:36,157 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 21:21:44,467 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 21:21:44,912 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 21:21:44,917 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 21:21:45,161 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-08-18 21:21:45,463 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-08-18 21:21:45,918 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-08-18 21:23:27,499 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-08-18 21:24:27,500 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2026-08-18 21:25:27,502 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2026-08-18 21:26:27,503 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2026-08-18 21:28:03,446 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-08-18 21:29:03,447 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2026-08-18 21:30:03,449 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2026-08-18 21:31:03,452 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2026-08-18 21:32:03,453 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2026-08-18 21:33:03,454 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2026-08-18 21:34:03,457 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2026-08-18 21:35:03,458 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
+2026-08-18 21:36:03,459 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.01 seconds
+2026-08-18 21:37:03,461 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.02 seconds
+2026-08-18 21:37:35,186 [application.py:log_request()] - 101 GET /websocket (192.168.0.183) [_TRUSTED_USER_] 10.58ms
+2026-08-18 21:37:35,188 [websockets.py:open()] - Websocket Opened: ID: 281473171684752, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-08-18 21:37:35,194 [websockets.py:_handle_identify()] - Websocket 281473171684752 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-08-18 21:38:03,462 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.02 seconds
+2026-08-18 21:39:03,464 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.02 seconds
+2026-08-18 21:40:03,465 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 780.02 seconds
+2026-08-18 21:41:03,465 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 840.02 seconds
+2026-08-18 21:45:40,430 [application.py:prepare()] - Upload Request Received from 192.168.0.183
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarywBw7qw58a9fpuLtd
+2026-08-18 21:45:40,451 [application.py:post()] - Processing Uploaded File: sovol-macros-2.cfg
+2026-08-18 21:45:40,463 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.183) [_TRUSTED_USER_] 35.11ms
+2026-08-18 21:45:41,530 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 21:45:42,805 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 21:45:51,156 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 21:45:51,611 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 21:45:51,616 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 21:45:52,124 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-08-18 21:45:52,390 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-08-18 21:45:53,125 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-08-18 21:46:00,548 [websockets.py:on_close()] - Websocket Closed: ID: 281473170385360 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.02
+2026-08-18 21:46:00,711 [application.py:log_request()] - 101 GET /websocket (192.168.0.183) [_TRUSTED_USER_] 7.13ms
+2026-08-18 21:46:00,712 [websockets.py:open()] - Websocket Opened: ID: 281473170386080, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-08-18 21:46:00,719 [websockets.py:_handle_identify()] - Websocket 281473170386080 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-08-18 21:46:20,193 [websockets.py:on_close()] - Websocket Closed: ID: 281473170386080 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.48
+2026-08-18 21:46:20,281 [application.py:log_request()] - 101 GET /websocket (192.168.0.183) [_TRUSTED_USER_] 7.33ms
+2026-08-18 21:46:20,282 [websockets.py:open()] - Websocket Opened: ID: 281473170287200, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-08-18 21:46:20,286 [websockets.py:_handle_identify()] - Websocket 281473170287200 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-08-18 21:46:30,402 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: server.files.move, Code: 400, Message: [Errno 20] Not a directory: '/home/biqu/printer_data/config/sovol-macros.cfg/sovol-macros.cfg'
+2026-08-18 21:54:29,994 [application.py:prepare()] - Upload Request Received from 192.168.0.183
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryQUt36CZG8eAaaJqA
+2026-08-18 21:54:30,033 [application.py:post()] - Processing Uploaded File: sovol-macros-2.cfg
+2026-08-18 21:54:30,057 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.183) [_TRUSTED_USER_] 66.81ms
+2026-08-18 21:54:30,932 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 21:54:32,703 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 21:54:41,222 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 21:54:41,671 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 21:54:41,676 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 21:54:41,922 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-08-18 21:54:42,191 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-08-18 21:54:42,933 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-08-18 22:00:54,495 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-08-18 22:01:54,496 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2026-08-18 22:06:05,487 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-08-18 22:07:05,489 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2026-08-18 22:08:05,491 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.01 seconds
+2026-08-18 22:09:05,492 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2026-08-18 22:10:05,494 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2026-08-18 22:11:05,496 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2026-08-18 22:12:05,497 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2026-08-18 22:13:05,499 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
+2026-08-18 22:14:05,501 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.02 seconds
+2026-08-18 22:15:05,503 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.02 seconds
+2026-08-18 22:16:05,506 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.02 seconds
+2026-08-18 22:17:05,507 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.02 seconds
+2026-08-18 22:18:05,509 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 780.02 seconds
+2026-08-18 22:19:05,510 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 840.02 seconds
+2026-08-18 22:19:54,898 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 22:19:56,161 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 22:20:04,605 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 22:20:05,048 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 22:20:05,053 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 22:20:05,827 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-08-18 22:20:06,076 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-08-18 22:20:06,815 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-08-18 22:20:24,808 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 22:20:26,072 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 22:20:34,626 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 22:20:35,082 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 22:20:35,096 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 22:20:35,582 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-08-18 22:20:35,849 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-08-18 22:20:36,584 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
+2026-08-18 22:22:02,107 [application.py:prepare()] - Upload Request Received from 192.168.0.183
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryb1rhyFQ67nAHQdlU
+2026-08-18 22:22:04,044 [application.py:post()] - Processing Uploaded File: Doctor Pen Holder_PLA_0.3_2h46m.gcode
+2026-08-18 22:22:05,010 [shell_command.py:pipe_data_received()] - INFO:metadata:Processor preprocess_cancellation is disabled
+
+2026-08-18 22:22:05,276 [shell_command.py:_check_proc_success()] - Command (/home/biqu/moonraker-env/bin/python /home/biqu/moonraker/moonraker/components/file_manager/metadata.py -c /tmp/metacfg-ekdark7f.json) successfully finished
+2026-08-18 22:22:05,285 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.183) [_TRUSTED_USER_] 3181.60ms
+2026-08-18 22:22:09,594 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Doctor Pen Holder_PLA_0.3_2h46m.gcode
+2026-08-18 22:22:09,853 [job_state.py:_send_job_event()] - Job Started: Doctor Pen Holder_PLA_0.3_2h46m.gcode
+2026-08-18 22:22:47,525 [application.py:log_request()] - 101 GET /websocket (192.168.0.183) [_TRUSTED_USER_] 5.64ms
+2026-08-18 22:22:47,526 [websockets.py:open()] - Websocket Opened: ID: 281473170035376, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36, Host Name: 192.168.0.209
+2026-08-18 22:22:47,540 [websockets.py:_handle_identify()] - Websocket 281473170035376 Client Identified - Name: mainsail, Version: 2.16.0, Type: web
+2026-08-18 22:23:40,810 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2026-08-18 22:24:02,738 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2026-08-18 22:24:07,286 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.cancel, Code: 400, Message: Unknown gcode_macro variable 'record_extruder_temp'
+2026-08-18 22:24:10,119 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 22:24:54,909 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-08-18 22:24:56,173 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-08-18 22:25:04,585 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2026-08-18 22:25:05,044 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-08-18 22:25:05,050 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-08-18 22:25:05,803 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-08-18 22:25:06,110 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-08-18 22:25:06,819 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor mcu_temp', 'temperature_sensor Host_temp', 'temperature_sensor Toolhead_Temp', 'extruder']
